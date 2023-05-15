@@ -93,7 +93,7 @@ function updateResults() {
 	costOutput.value = `$ ${cost}`;
     NatGasCost.value = `$ ${NatCost}`;
     natsaving.value = `$ ${costsaving}`;
-    CO2saving.value =  `CO2 Saved - ${CO2savings} tons`
+    CO2saving.value =  `${CO2savings} tons`;
 }
 
 
