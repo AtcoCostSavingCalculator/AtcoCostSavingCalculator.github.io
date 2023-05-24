@@ -33,14 +33,13 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Save Money & Environment</div>
+                <div class="text-1">Reduce Costs and Emissions</div>
                 <div class="text-2">Cost Savings Calculator</div>
                 <div class="text-3"><span class="typing"></span></div>
            
             </div>
         </div>
     </section>
-
 
     <!-- about section start -->
     <section class="about" id="about">
@@ -49,20 +48,29 @@
 
             <label for="consumption">Propane Consumption (L/Year):</label>
             <div class="slider-container">
-                <input type="range" id="consumption" min="100000" max="200000" value="150000" step="100">
-                <input type="number" id="consumption-value" min="100000" max="200000" value="150000" step="1">
+                <input type="range" id="consumption" min="0" max="200000" value="150000" step="100">
+                <input type="number" id="consumption-value" min="0" max="200000" value="150000" step="1">
+                <select id="consumption-unit">
+                    <option value="day">L/Day</option>
+                    <option value="month">L/Mon</option>
+                    <option value="year">L/Year</option>
+                  </select>                  
             </div>
         
             
             <div class = "input-number">
-                <label for="price">Price per liter of Propane: </label>
+                <label for="price">Price per liter of Propane:  $</label>
                 <input type="number" id="price" name="price" step="0.01" value="1.05">
             
-                <label for="natprice">Natural Gas Base Rate * :</label>
+                <label for="natprice">Natural Gas Base Rate*:   $</label>
                 <input type="number" id="natprice" name="natprice" step="0.01" value="4.99">
             </div>
             
             <!-- <hr> -->
+            <div class="Price">
+                <label for = "totNatGas">Total Natiral Gas Price Including Fixed Rate ($/GJ): </label>
+                <input type = "text" id = "totNatGas" name = "totNatGas" readonly>
+            </div>
 
             <div class="Yearly-Cost">
                 <label for="cost">Cost of Propane Per Year:</label>
@@ -72,7 +80,7 @@
                 <input type="text" id="natgascost" name="natgascost" readonly>
             </div>
         
-            <label for = "CO2saving">GHG Emission Savings!</label>
+            <label for = "CO2saving">GHG Emission Reduction!</label>
             <input type = "text" id = "CO2saving" name = "CO2saving" readonly>
         
             <label for = "natsaving">Total Savings!</label>
@@ -82,7 +90,7 @@
 
         </div>
     </section>
-    <p id="foot">Natural Gas Base Rate * - 3 Year fixed rate. This website is for informational purposes only. Any reliance you place on such information is strictly at your own risk.</p>
+    <p id="foot">Natural Gas Base Rate* - 3 Year fixed rate. This website is for informational purposes only. Any reliance you place on such information is strictly at your own risk.</p>
 
     <!-- footer section start -->
     <!-- <footer>
