@@ -267,6 +267,8 @@ input[type="text"] {
 
 #consumption-unit{
     width: 80px;
+    border-radius: 2px;
+    height: 25px;
     margin-left: 10px;
     height: 30px;
 }
@@ -296,10 +298,10 @@ input[type="text"] {
     font-size: medium;
 }
 #totNatGas{
-    padding-top: 2px;
+    padding-top: 10px;
     text-align: center;
-    height: 15px;
-    border-radius: 5px;
+    height: 25px;
+    border-radius: 3px;
 }
 
 .Yearly-Cost{

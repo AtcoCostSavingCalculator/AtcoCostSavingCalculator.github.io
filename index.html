@@ -44,16 +44,16 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">Cost Saving Calculator</h2>
+            <h2 class="title">Cost Savings Calculator</h2>
 
-            <label for="consumption">Propane Consumption (L/Year):</label>
+            <label for="consumption">Propane Consumption:</label>
             <div class="slider-container">
                 <input type="range" id="consumption" min="0" max="200000" value="150000" step="100">
                 <input type="number" id="consumption-value" min="0" max="200000" value="150000" step="1">
                 <select id="consumption-unit">
-                    <option value="day">L/Day</option>
-                    <option value="month">L/Mon</option>
                     <option value="year">L/Year</option>
+                    <option value="month">L/Mon</option>
+                    <option value="day">L/Day</option>
                   </select>                  
             </div>
         
@@ -68,7 +68,7 @@
             
             <!-- <hr> -->
             <div class="Price">
-                <label for = "totNatGas">Total Natiral Gas Price Including Fixed Rate ($/GJ): </label>
+                <label for = "totNatGas">Total Natural Gas Price Including Fixed Rate ($/GJ): </label>
                 <input type = "text" id = "totNatGas" name = "totNatGas" readonly>
             </div>
 
