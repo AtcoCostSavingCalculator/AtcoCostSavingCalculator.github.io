@@ -93,13 +93,13 @@ function updateResults() {
     const value = parseInt(consumptionValue.value);
     let consumption = value;
 
-    if (unit === "day"){
-        consumption = value*365;
-    }
+    // if (unit === "day"){
+    //     consumption = value*365;
+    // }
 
-    else if (unit === "month"){
-        consumption = value*12;
-    }
+    // else if (unit === "month"){
+    //     consumption = value*12;
+    // }
 
     // const consumption = consumptionSlider.value;
     const price = priceInput.value;
