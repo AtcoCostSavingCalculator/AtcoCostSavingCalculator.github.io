@@ -75,8 +75,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: red;
-    /* color: rgb(21, 228, 239); */
+    color: rgb(21, 228, 239);
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -102,7 +101,8 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo{
-    color: rgb(21, 228, 239);
+    color: red;
+    /* color: rgb(21, 228, 239); */
     font-size: 35px;
     font-weight: 600;
 }
